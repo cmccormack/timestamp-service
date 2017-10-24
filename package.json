@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/cmccormack/timestamp-service#readme",
   "dependencies": {
+    "consolidate": "^0.14.5",
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nunjucks": "^3.0.1"
   }
 }
