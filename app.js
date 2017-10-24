@@ -13,11 +13,11 @@ app.engine('html', engines.nunjucks)
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'html')
 
-if (!process.env.DISABLE_XORIGIN) {
+if (process.env.DISABLE_XORIGIN === 'false') {
   app.use(function(req, res, next) {
     var allowedOrigins = ['https://mackville.net']
     var origin = req.headers.origin || '*'
-    if(!process.env.XORIG_RESTRICT || allowedOrigins.indexOf(origin) > -1){
+    if(process.env.XORIG_RESTRICT === 'false' || allowedOrigins.indexOf(origin) > -1){
          console.log(origin)
          res.setHeader('Access-Control-Allow-Origin', origin)
          res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
