@@ -2,7 +2,7 @@
   "name": "timestamp-service",
   "version": "1.0.0",
   "description": "Timestamp Microservice - FreeCodeCamp",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/cmccormack/timestamp-service/issues"
   },
-  "homepage": "https://github.com/cmccormack/timestamp-service#readme"
+  "homepage": "https://github.com/cmccormack/timestamp-service#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
