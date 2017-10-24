@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Timestamp Microservice - Chris McCormack</title>
+
+  <!-- Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous">
+  </script>
+
+  <!-- CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class='container'>
+    <div class='row'>
+      <div class='col'>
+        <h1>{{ title }}</h1>
+
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col'>
+        <blockquote>
+          <span class='lead'>Instructions:</span>
+          <ul>
+            <li>Pass a representation of the date as a parameter to the URL <code>https://zenith-fisherman.glitch.me/</code></li>
+            <li>Date parameter can either be natural language (<mark>March 10, 1983</mark>) or unix timestamp (<mark>416102400</mark>)</li>
+          </ul>
+        </blockquote>
+        <span class='lead'>Example Input:</span>
+        <ul>
+          <li><code>https://zenith-fisherman.glitch.me/March%2010,%201983</code></li>
+          <li><code>https://zenith-fisherman.glitch.me/416102400</code></li>
+        </ul>
+        <span class='lead'>Example Output:</span>
+        <ul>
+          <li><code>{ "unix": 416102400, "natural": "March 10, 1983" }</code></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
