@@ -14,7 +14,11 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'html')
 
 app.get('/', (req, res) => {
-  res.render('examples', {title:'Timestamp Microservice'})
+  res.render('examples', 
+  {
+    title:'Timestamp Microservice',
+    url: 'https://timestampserver.glitch.me/'
+  })
 })
 
 app.get('/:date', (req, res) => {
